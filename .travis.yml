@@ -1,0 +1,5 @@
+jobs:
+  include:
+    - if: env(BUILD_BRANCHES_RE) IS NOT present
+      script:
+        - echo "It works"
